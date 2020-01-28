@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/sininenYlapalkki</item>
+        <item name="colorPrimaryDark">@color/sininenYlapalkki</item>
+        <item name="colorAccent">@color/sininenYlapalkki</item>
+        <item name="android:textViewStyle">@style/arialTextView</item>
+    </style>
+
+    <style name="arialTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">arial-regular</item>
+    </style>
+
+</resources>

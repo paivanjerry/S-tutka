@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="100"
+        android:background="@drawable/tausta"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kellonaika1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center"
+
+            android:textColor="@color/harmaaTeksti"
+            android:textSize="13sp"
+            tools:text="kellonaika" />
+
+        <ImageView
+            android:id="@+id/kuvake1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/tausta" />
+
+        <TextView
+            android:id="@+id/lampotila1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center"
+
+            android:textColor="@color/mustaTeksti"
+            android:textSize="15sp"
+            tools:text="lampotila" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:background="@drawable/vaaleansininen_tausta"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tuuli1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="@color/harmaaTeksti"
+                android:textSize="10sp"
+                tools:text="tuuli" />
+
+            <TextView
+                android:id="@+id/kosteus1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="@color/harmaaTeksti"
+                android:textSize="10sp"
+                tools:text="kosteus" />
+
+            <TextView
+                android:id="@+id/sade1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="@color/harmaaTeksti"
+                android:textSize="10sp"
+                tools:text="sade" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

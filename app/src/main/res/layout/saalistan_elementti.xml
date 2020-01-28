@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:orientation="vertical"
+
+
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:id="@+id/iso_laatikko"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="-1"
+        android:background="@drawable/tausta">
+
+        <Space
+            android:id="@+id/yla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Space
+            android:id="@+id/ala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" />
+
+        <Space
+            android:id="@+id/vasen"
+            android:layout_width="10dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="locale" />
+
+        <Space
+            android:id="@+id/oikea"
+            android:layout_width="10dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/kaupunki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yla"
+            android:layout_toEndOf="@id/vasen"
+
+            android:textSize="19sp"
+            android:textColor="@color/mustaTeksti"
+            tools:text="kaupunki" />
+
+
+        <TextView
+            android:id="@+id/kuvaus"
+            android:textColor="@color/harmaaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kaupunki"
+            android:layout_toEndOf="@id/vasen"
+
+            android:textSize="13sp"
+            tools:text="kuvaus" />
+
+        <TextView
+            android:id="@+id/pvm"
+            android:textColor="@color/mustaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/kellonaika"
+            android:layout_toEndOf="@id/vasen"
+
+            android:textSize="15sp"
+            tools:text="pvm" />
+
+
+        <TextView
+            android:id="@+id/kellonaika"
+            android:textColor="@color/harmaaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ala"
+            android:layout_toEndOf="@id/vasen"
+
+            android:textSize="13sp"
+            tools:text="kellonaika" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yla"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/oikea"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/kuvake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/tausta"
+                tools:srcCompat="@android:drawable/btn_dialog" />
+
+            <TextView
+                android:id="@+id/lampotila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="@color/mustaTeksti"
+                android:textSize="26sp"
+                tools:text="lampotila" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tuuli"
+            android:textColor="@color/harmaaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/kosteus"
+            android:layout_toStartOf="@id/oikea"
+
+            android:textSize="13sp"
+            tools:text="tuuli" />
+
+
+        <TextView
+            android:id="@+id/kosteus"
+            android:textColor="@color/harmaaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sade"
+            android:layout_toStartOf="@id/oikea"
+
+
+            android:textSize="13sp"
+            tools:text="kosteus" />
+
+        <TextView
+            android:id="@+id/sade"
+            android:textColor="@color/harmaaTeksti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ala"
+            android:layout_toStartOf="@id/oikea"
+
+
+            android:textSize="13sp"
+            tools:text="sade" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pienet_laatikot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/pysty1"
+            layout="@layout/pieni_elementti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/pysty2"
+            layout="@layout/pieni_elementti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/pysty3"
+            layout="@layout/pieni_elementti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/pysty4"
+            layout="@layout/pieni_elementti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/pysty5"
+            layout="@layout/pieni_elementti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

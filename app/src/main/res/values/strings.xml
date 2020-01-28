@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Säätutka</string>
+    <string name="saatutka">Säätutka</string>
+    <string name="kaikki_kaupungit">Kaikki kaupungit</string>
+    <string name="tuuli">Wind:</string>
+    <string name="kosteus">Humidity:</string>
+    <string name="sade">Precipitation (3 h):</string>
+    <string name="avain_virhe">Virhe! Avainta ei ole syötetty.</string>
+    <string name="avaimen_syotto_info">Kopioi avain alla olevaan kenttään ja paina OK. Tämän jälkeen valitse </string>
+    <string name="ok">OK</string>
+
+
+</resources>
