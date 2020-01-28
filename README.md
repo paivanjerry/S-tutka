@@ -4,6 +4,8 @@
 
 **Sovelluksen toteutuksesta:**
 
+Sovellus on toteutettu Androidille natiivina sovelluksena käyttäen Javaa.
+
 Kaupunkeja voi lisätä ja poistaa muuttamalla VAKIOT luokasta KAUPUNGIT muuttujaa.
 
 Sovellus toimii suurella kaupunkimäärällä hyvin, koska graafiset elementit ladataan vasta listaa rullaamalla.
@@ -15,7 +17,7 @@ Ulkoisena kirjastona sovellus käyttää Picassoa. Kirjastoa käytetään kuvien
 
 **Eroja tehtävänannosta:**
 
-Pudotusvalikko on kiinnitettynä ruudun yläosaan (tehtävänannossa saattaa rullautua sivun mukana?).
+Pudotusvalikko on kiinnitettynä ruudun yläosaan (tehtävänannossa saattaa rullautua sivun mukana?). Ainakin omasta mielestäni tämä ratkaisu toimii paremmin, koska yhden kaupungin sää mahtuu silti myös pienelle ruudulle. Pidempää listaa selatessa käyttäjän ei tarvitse rullata listan alkuun käyttääkseen pudotusvalikkoa.
 
 Fonttien koot ovat yksikköinä sp, eikä pt. Tällä tavoin sovellus mukailee käyttäjän laitteelle asettamia fonttikoon asetuksia.
 
